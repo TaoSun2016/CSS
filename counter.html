@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    	body {
+    		counter-reset: section;
+    	}
+
+    	h2::before {
+    		counter-increment: section;
+    		content: "Section" counter(section) ":";	
+    	}
+	</style>
+  </head>
+  <body>
+  	<h1>Hello</h1>
+  	<h2>this is the first h2</h2>
+  	<h2>this is the second h2</h2>
+  	<h2>this is the third h2</h2>
+  </body>
+</html>
